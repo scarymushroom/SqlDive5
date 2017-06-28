@@ -2,6 +2,6 @@
 
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(Book.where(title: :q))  %>
-  <%= submit_tag("Search") %>
+  <%= text_field_tag(Book.where(title: :q)) %>
+  <%= link_to submit_tag("Search"), "results" %>
 <% end %>
